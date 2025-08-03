@@ -1,60 +1,80 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PixelsSpin</title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <style type="text/css">
+  <style>
     body {
-      background-color: #000d26;
-      text-align: center;
-      font-family: Menlo, monospace;
+      background-color: #001133;
       color: yellow;
+      font-family: 'Press Start 2P', monospace;
+      image-rendering: pixelated;
+      text-align: center;
+      margin: 0;
+      padding: 0;
     }
+
     h1 {
       font-size: 32px;
-      text-shadow: 2px 2px #000;
-      margin-top: 20px;
+      margin-top: 40px;
+      text-shadow: 2px 2px 0 #000;
     }
-    .gold {
-      margin: 20px;
+
+    #slot {
+      margin: 40px auto;
+      border: 8px solid gold;
+      width: 320px;
+      height: 320px;
+      background: url('slot-machine.png') center center no-repeat;
+      background-size: contain;
     }
-    .slot-machine {
-      margin: 20px auto;
-    }
-    .download-btn {
+
+    .download-button {
       display: inline-block;
       margin-top: 30px;
-      padding: 12px 24px;
+      padding: 16px 32px;
       background-color: green;
-      color: yellow;
+      color: #fff;
       text-decoration: none;
-      font: bold 16px Menlo;
+      font-size: 16px;
       border: 3px solid yellow;
       box-shadow: 0 0 12px yellow;
+      cursor: pointer;
     }
+
+    .treasure {
+      width: 96px;
+      margin: 24px;
+    }
+
     footer {
-      color: #9a9a9a;
+      margin-top: 50px;
       font-size: 12px;
-      margin-top: 40px;
+      color: #aaa;
     }
+
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
   </style>
 </head>
 <body>
+
   <h1>Welcome to PixelsSpin!</h1>
-  <div class="gold">
-    <img src="gold-left.png" alt="Gold Left">
-    <img src="gold-right.png" alt="Gold Right">
+
+  <div>
+    <img class="treasure" src="gold-left.png" alt="Gold" />
+    <img class="treasure" src="gold-right.png" alt="Gold" />
   </div>
-  <div class="slot-machine">
-    <img src="slot-machine.png" alt="Slot Machine">
-  </div>
-  <a class="download-btn" href="pixelsspin.apk" download>🎰 Download APK</a>
+
+  <div id="slot"></div>
+
+  <a class="download-button" href="http://www.pixelsspin.com/pixelsspin.apk" download>
+    🎰 Download APK
+  </a>
+
   <footer>
     &copy; 2025 PixelsSpin. All rights reserved.
   </footer>
+
 </body>
 </html>
