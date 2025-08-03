@@ -1,80 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
   <title>PixelsSpin</title>
-  <style>
-    body {
-      background-color: #001133;
-      color: yellow;
-      font-family: 'Press Start 2P', monospace;
-      image-rendering: pixelated;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    h1 {
-      font-size: 32px;
-      margin-top: 40px;
-      text-shadow: 2px 2px 0 #000;
-    }
-
-    #slot {
-      margin: 40px auto;
-      border: 8px solid gold;
-      width: 320px;
-      height: 320px;
-      background: url('slot-machine.png') center center no-repeat;
-      background-size: contain;
-    }
-
-    .download-button {
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style type="text/css">
+    body {background-color: #000d26; text-align: center;}
+    .gold { margin: 10px; }
+    .slot-machine {
       display: inline-block;
-      margin-top: 30px;
-      padding: 16px 32px;
+      position: relative;
+      width: 320px;
+      height: auto;
+      background: url('slot-machine.png') no-repeat center center;
+      background-size: contain;
+      margin: 20px auto;
+    }
+    .download-btn {
+      position: absolute;
+      top: 49%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 12px 24px;
       background-color: green;
-      color: #fff;
+      color: yellow;
       text-decoration: none;
-      font-size: 16px;
+      font: bold 16px Menlo;
       border: 3px solid yellow;
       box-shadow: 0 0 12px yellow;
-      cursor: pointer;
+      z-index: 2;
     }
-
-    .treasure {
-      width: 96px;
-      margin: 24px;
-    }
-
     footer {
-      margin-top: 50px;
-      font-size: 12px;
-      color: #aaa;
+      color: #9a9a9a;
+      font: 12px Menlo;
+      margin-top: 20px;
     }
-
-    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
   </style>
 </head>
 <body>
-
-  <h1>Welcome to PixelsSpin!</h1>
-
-  <div>
-    <img class="treasure" src="gold-left.png" alt="Gold" />
-    <img class="treasure" src="gold-right.png" alt="Gold" />
+  <h1 style="font: 32.0px Menlo; color: #ffff0b; text-shadow: 2px 2px #000">Welcome to PixelsSpin!</h1>
+  <div class="gold">
+    <img src="gold-left.png" alt="Gold Left">
+    <img src="gold-right.png" alt="Gold Right">
   </div>
-
-  <div id="slot"></div>
-
-  <a class="download-button" href="pixelsspin.apk" download>
-    🎰 Download APK
-  </a>
-
+  <div class="slot-machine">
+    <a class="download-btn" href="pixelsspin.apk" download>🎰 Download APK</a>
+  </div>
   <footer>
     &copy; 2025 PixelsSpin. All rights reserved.
   </footer>
-
 </body>
 </html>
