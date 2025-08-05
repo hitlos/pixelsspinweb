@@ -22,6 +22,37 @@
       margin-top: 40px;
       text-shadow: 2px 2px 0 #000;
     }
+	
+	#age-gate {
+	  position: fixed;
+	  top: 0; left: 0;
+	  width: 100%; height: 100%;
+	  background-color: rgba(0, 0, 0, 0.95);
+	  color: yellow;
+	  font-family: 'Press Start 2P', monospace;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  z-index: 9999;
+	}
+
+	#age-gate h2 {
+	  font-size: 14px;
+	  text-align: center;
+	  margin: 0 20px;
+	}
+
+	#age-gate button {
+	  margin: 20px;
+	  padding: 12px 24px;
+	  background-color: green;
+	  color: #fff;
+	  font-size: 14px;
+	  border: 3px solid yellow;
+	  cursor: pointer;
+	  font-family: inherit;
+	}
 
     #slot {
       margin: 40px auto;
@@ -61,6 +92,11 @@
   </style>
 </head>
 <body>
+	<div id="age-gate">
+	  <h2>Are you 18 or older?</h2>
+	  <button onclick="allowAccess()">Yes, I'm 18+</button>
+	  <button onclick="denyAccess()">No</button>
+	</div>
 
   <h1>Welcome to PixelsSpin!</h1>
 
@@ -70,7 +106,7 @@
   </div>
 
   <div id="slot">
-    <a class="download-button" href="pixelsspin.apk" download>
+    <a class="download-button" href="http://www.pixelsspin.com/pixelsspin.apk" download>
       Download APK
     </a>
   </div>
@@ -78,6 +114,14 @@
   <footer>
     &copy; 2025 PixelsSpin. All rights reserved.
   </footer>
+<script>
+  function allowAccess() {
+    document.getElementById('age-gate').style.display = 'none';
+  }
 
+  function denyAccess() {
+    window.location.href = 'https://google.com'; // Or another safe location
+  }
+</script>
 </body>
 </html>
