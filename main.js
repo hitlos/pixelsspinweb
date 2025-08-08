@@ -34,7 +34,7 @@
   const PAY_DOUBLE  = 100;
 
   // State
-  let coins = clamp(readInt("coins", 200), 0, 100000);
+  let coins = clamp(readInt("coins", 10000), 0, 100000);
   let muted = readInt("muted", 0) === 1;
 
   // Helpers
