@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PixelsSpin</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div id="game">
+    <img id="bg" src="assets/slot_frame_bg.png" alt="frame" />
+
+    <div id="coinCounter">$<span id="coins">0</span></div>
+
+    <!-- Reels -->
+    <div id="reels">
+      <img id="reel1" class="reel" src="assets/cherry.png" alt="r1" />
+      <img id="reel2" class="reel" src="assets/lemon.png" alt="r2" />
+      <img id="reel3" class="reel" src="assets/seven.png" alt="r3" />
+    </div>
+
+    <!-- Spin -->
+    <button id="spinBtn">SPIN</button>
+
+    <!-- Treasures -->
+    <img id="treasureLeft" class="treasure" src="assets/treasure_pile.png" alt="left" />
+    <img id="treasureRight" class="treasure flip" src="assets/treasure_pile.png" alt="right" />
+
+    <!-- Win Popup -->
+    <div id="winOverlay" class="overlay hidden">
+      <div class="center">
+        <img class="popup" src="assets/win_popup.png" alt="WIN" />
+      </div>
+    </div>
+
+    <!-- Settings -->
+    <button id="settingsBtn" title="Settings">⚙️</button>
+    <div id="settings" class="overlay hidden">
+      <div class="panel">
+        <h1>SETTINGS</h1>
+        <label class="row">
+          <input type="checkbox" id="muteToggle" />
+          <span>Mute sounds</span>
+        </label>
+        <div class="row small">Version <span id="version">1.0</span></div>
+        <button id="closeSettings">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sounds -->
+  <audio id="sSpin" src="assets/slot_machine_realistic_effect.mp3" preload="auto"></audio>
+  <audio id="sCoin" src="assets/coin_sound.mp3" preload="auto"></audio>
+  <audio id="sWin"  src="assets/victory_jingle.mp3" preload="auto"></audio>
+
+  <script src="main.js"></script>
+</body>
+</html>
