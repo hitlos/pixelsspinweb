@@ -1,18 +1,136 @@
-Privacy Policy for PixelsSpin
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy • PixelsSpin</title>
+  <meta name="description" content="Privacy Policy for the PixelsSpin mobile game." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b0c0e;
+      --panel: #121418;
+      --text: #e7e9ee;
+      --muted:#a7aab3;
+      --brand:#66b2ff;
+      --ring:#2a70ff33;
+      --border:#1c1f26;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f7f8fb; --panel:#ffffff; --text:#0f1222; --muted:#525766; --brand:#1d63ff; --ring:#1d63ff22; --border:#e7e9f1;
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background:var(--bg); color:var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height:1.65;
+    }
+    .wrap{max-width:920px; margin:48px auto; padding:0 20px}
+    .card{
+      background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:32px; box-shadow:0 8px 28px -12px rgba(0,0,0,.35);
+    }
+    h1{font-size: clamp(28px, 4vw, 40px); line-height:1.15; margin:0 0 8px}
+    .subtitle{color:var(--muted); margin:0 0 24px; font-size:15px}
+    h2{margin:28px 0 12px; font-size: clamp(20px, 3vw, 24px)}
+    h3{margin:22px 0 8px; font-size:18px}
+    p{margin:12px 0}
+    ul{margin:8px 0 16px 22px}
+    li{margin:6px 0}
+    a{color:var(--brand); text-decoration:none;}
+    a:hover{ text-decoration:underline; }
+    .notice{
+      padding:12px 14px; border:1px solid var(--border); background:linear-gradient(180deg, var(--panel), transparent);
+      border-radius:12px; color:var(--muted);
+    }
+    .toc{
+      display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:12px; margin: 18px 0 6px;
+    }
+    .toc a{display:block; padding:10px 12px; border:1px solid var(--border); border-radius:10px; background:linear-gradient(180deg, var(--panel), transparent)}
+    .footer{margin-top:28px; padding-top:18px; border-top:1px dashed var(--border); color:var(--muted); font-size:14px}
+    .brand{display:flex; align-items:center; gap:10px; margin-bottom:18px}
+    .dot{width:12px; height:12px; border-radius:999px; background:var(--brand); box-shadow:0 0 0 6px var(--ring)}
+    .kbd{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; background:var(--bg); border:1px solid var(--border); padding:2px 6px; border-radius:6px}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="brand"><span class="dot"></span><div>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">for <strong>PixelsSpin</strong></p>
+      </div></div>
 
-PixelsSpin ("we", "our", "us") values your privacy. This policy explains how we handle your data.
+      <p class="notice"><strong>Summary:</strong> PixelsSpin shows ads via Google AdMob and stores your game progress locally on your device. We do not collect account information, contacts, or precise location.</p>
 
-Data We Collect:
-- We use Google AdMob to display ads. AdMob may collect the Google Advertising ID and device information for ad personalization and analytics. See Google’s policy: https://policies.google.com/technologies/ads
-- We store your in-game coins and progress locally on your device using Android SharedPreferences. This data is not shared with us or third parties.
+      <nav class="toc" aria-label="Table of contents">
+        <a href="#who">Who we are</a>
+        <a href="#data">Data we handle</a>
+        <a href="#ads">Advertising (AdMob)</a>
+        <a href="#local">Local storage & retention</a>
+        <a href="#controls">Your choices</a>
+        <a href="#children">Children’s privacy</a>
+        <a href="#changes">Changes</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-We do not collect personal information such as your name, email, contacts, location, or any account details.
+      <h2 id="who">Who we are</h2>
+      <p><strong>PixelsSpin</strong> is a casual mobile game. This policy explains how the app and its third‑party partners handle data.</p>
 
-Data Retention:
-- Your local game data is kept until you uninstall the app or clear its storage.
+      <h2 id="data">Data we handle</h2>
+      <h3>Collected by third parties (AdMob)</h3>
+      <p>PixelsSpin uses <a href="https://admob.google.com/" rel="noopener" target="_blank">Google AdMob</a> to display ads. The Google Mobile Ads SDK may collect the <em>Google Advertising ID</em> and device information for ad delivery, personalization (if enabled), frequency capping, and fraud prevention. See Google’s policies:</p>
+      <ul>
+        <li><a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">How Google uses information from sites or apps</a></li>
+        <li><a href="https://www.google.com/about/company/user-consent-policy/" rel="noopener" target="_blank">EU User Consent Policy</a> (if applicable)</li>
+      </ul>
 
-Data Deletion:
-- You can delete your local game data by going to your device’s settings → Apps → PixelsSpin → Storage → Clear Data.
+      <h3>Collected by us</h3>
+      <ul>
+        <li><strong>Game progress & coins</strong> — stored locally on your device using Android <code class="kbd">SharedPreferences</code>. This data is not transmitted to our servers.</li>
+      </ul>
 
-Contact Us:
-For privacy concerns, email pixelsspin@gmail.com
+      <p>We do <strong>not</strong> collect your name, email, contacts, precise location, or other personal identifiers beyond the advertising ID collected by AdMob.</p>
+
+      <h2 id="ads">Advertising (AdMob)</h2>
+      <p>AdMob provides interest‑based and contextual ads. Depending on your region and settings, you may see a consent prompt or an in‑ad “Why this ad?”/“AdChoices” control to manage preferences. You can also reset your device’s advertising ID or disable ad personalization (see <em>Your choices</em> below).</p>
+
+      <h2 id="local">Local storage & retention</h2>
+      <ul>
+        <li><strong>Where stored:</strong> On your device only.</li>
+        <li><strong>What stored:</strong> Coin balance and basic gameplay state.</li>
+        <li><strong>How long:</strong> Until you uninstall the app or clear data.</li>
+      </ul>
+
+      <h2 id="controls">Your choices</h2>
+      <h3>Reset game data</h3>
+      <p>You can delete local game data any time:</p>
+      <ol>
+        <li>Open your device <em>Settings</em> → <em>Apps</em> → <em>PixelsSpin</em>.</li>
+        <li>Tap <em>Storage</em> → <em>Clear data</em>.</li>
+      </ol>
+      <p>If provided in‑app, a <em>Reset Game Data</em> button will also clear local preferences.</p>
+
+      <h3>Ads & advertising ID</h3>
+      <ul>
+        <li><strong>Android:</strong> Settings → Google → Ads → “Delete advertising ID” or “Opt out of Ads Personalization”.</li>
+        <li><strong>In‑ad controls:</strong> Use the AdChoices/Why this ad? options where available.</li>
+      </ul>
+
+      <h2 id="children">Children’s privacy</h2>
+      <p>PixelsSpin is not directed to children under the age where parental consent is required by local law. If you believe a child has provided personal information to us, please contact us and we will take appropriate steps.</p>
+
+      <h2 id="changes">Changes to this policy</h2>
+      <p>We may update this policy from time to time. Material changes will be reflected on this page with an updated date.</p>
+
+      <h2 id="contact">Contact us</h2>
+      <p>Questions about privacy? Email us at <a href="mailto:pixelsspin@gmail.com">pixelsspin@gmail.com</a>.</p>
+
+      <p class="footer">Last updated: 11 Aug 2025</p>
+    </section>
+  </main>
+</body>
+</html>
